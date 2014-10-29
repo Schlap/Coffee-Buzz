@@ -25,3 +25,10 @@ describe 'Fizzbuzz', ->
 
   it 'knows that 1 is not divisible by 15', ->
     expect(fizzbuzz.isDivisibleByFifteen(1)).to.be.false
+
+  it 'says fizz when the number is divisible by 3', ->
+    expect(fizzbuzz.say(3)).to.equal('Fizz')
+
+  it 'says buzz when the number is divisible by 5', ->
+    expect(fizzbuzz.say(5)).to.equal('Buzz')
+
