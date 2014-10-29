@@ -32,3 +32,8 @@ describe 'Fizzbuzz', ->
   it 'says buzz when the number is divisible by 5', ->
     expect(fizzbuzz.say(5)).to.equal('Buzz')
 
+  it 'says fizzbuzz when a number is divisible by 3, 5, 15', ->
+    expect(fizzbuzz.say(15)).to.equal('FizzBuzz')
+
+  it 'says the number when it is not divisible by 3, 5, 15', ->
+    expect(fizzbuzz.say(2)).to.equal(2)
